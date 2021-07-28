@@ -18,7 +18,6 @@ let toDraw = false;
 const draw = (event) => {
   if (!toDraw) return; // making sure that the mouse is down
 
-  console.log(ctx.lineWidth);
   ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
   ctx.beginPath(); // this particular call will implement different colours and widths than the precvious
   ctx.moveTo(lastX, lastY); // values from the immediately previous call
